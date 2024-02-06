@@ -1,0 +1,19 @@
+{
+    "widgets": [
+        {
+            "type": "log",
+            "x": 12,
+            "y": 24,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "region": "us-east-1",
+                "title": "registry-download",
+                "query": "SOURCE '/aws/lambda/registry-download' | fields @timestamp, @message, @logStream, @log | sort @timestamp desc | limit 20 "
+
+            }
+        } 
+          
+
+    ]
+}
